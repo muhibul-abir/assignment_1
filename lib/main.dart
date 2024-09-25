@@ -11,25 +11,16 @@ class Book {
     totalbook++;
   }
 
-  getPagesread(int pages) {
-    print(pagesRead + pages);
-  }
+  getPagesread(int pages) => print("pages read=${pagesRead + pages}");
 
-  getTitle() {
-    print(title);
-  }
+  getTitle() => print("Book Title:$title");
 
-  getAuthor() {
-    print(author);
-  }
+  getAuthor() => print("Author name is :$author");
 
-  getPublicationYear() {
-    print(publicationYear);
-  }
+  getPublicationYear() => print("Publication year is:$publicationYear");
 
-  getBookAge(int currentyear) {
-    print(currentyear - publicationYear);
-  }
+  getBookAge(int currentyear) =>
+      print("This book age is: ${currentyear - publicationYear}");
 
   static int totalbook = 0;
 }
